@@ -21,7 +21,12 @@
 
 <script>
   // code here
-  let input = document.querySelector(".form-input");
-  console.log(input);
+  let input = document.getElementsByClassName("form-input");
+  for (let i = 0; i < input.length; i ++){
+    if (input[i].type === "text") {
+      console.log(input[i].value)
+    }
+  }
+
 
 </script>
