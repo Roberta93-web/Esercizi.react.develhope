@@ -1,9 +1,14 @@
-import './App.css';
+import "./App.css";
+import React from "react";
 
-function App() {
-  const hello = <h1>Hello, World!</h1>
-
-  return <div>{hello}</div>
+const hello = <h1>Hello, World!</h1>
+export class App extends React.Component {
+  render() {
+    return (
+      hello
+    )
+  }
 }
 
-export default App;
+  
+ export default App
