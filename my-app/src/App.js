@@ -1,14 +1,14 @@
 import "./App.css";
 import React from "react";
 
-const hello = <h1>Hello, World!</h1>
-export class App extends React.Component {
+function sayHello(name) {
+  return <h1>Hello, {name}</h1>;
+}
+
+class App extends React.Component {
   render() {
-    return (
-      hello
-    )
+    return sayHello("Roberta");
   }
 }
 
-  
- export default App
+export default App;
