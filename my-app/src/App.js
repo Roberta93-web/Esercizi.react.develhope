@@ -1,13 +1,13 @@
 import "./App.css";
 import React from "react";
 
-function sayHello(name) {
-  return <h1>Hello, {name}</h1>;
+function sum(a,b) {
+  return <h2>{a+b}</h2>;
 }
 
 class App extends React.Component {
   render() {
-    return sayHello("Roberta");
+    return sum(6,4);
   }
 }
 
