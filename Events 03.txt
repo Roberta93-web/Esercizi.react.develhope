@@ -1,5 +1,0 @@
-Events 03
-
-Create a ClickTracker component that renders three buttons. Implement a single event handler for all three buttons, and track of which button was pressed last. Show the last button that was pressed in an h1 tag within the ClickTracker component. Tip: you can use the event object to access the target property of the event.
-
-Crea un ClickTrackercomponente che esegue il rendering di tre pulsanti. Implementa un singolo gestore di eventi per tutti e tre i pulsanti e tieni traccia di quale pulsante è stato premuto per ultimo. Mostra l'ultimo pulsante che è stato premuto in un h1tag all'interno del ClickTrackercomponente. Suggerimento: è possibile utilizzare l' eventoggetto per accedere alla targetproprietà dell'evento.

@@ -5,7 +5,7 @@ export default class ClickTracker extends Component {
     lastButton: "",
   };
 
-  clickButton = (event) => {
+  handleClickButton = (event) => {
     this.setState(() => {
       return { lastbutton: event.target.innerHTML };
     });
@@ -13,9 +13,9 @@ export default class ClickTracker extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.clickButton}>button 1</button>
-        <button onClick={this.clickButton}>button 2</button>
-        <button onClick={this.clickButton}>button 3</button>
+        <button onClick={this.handleClickButton}>button 1</button>
+        <button onClick={this.handleClickButton}>button 2</button>
+        <button onClick={this.handleClickButton}>button 3</button>
         <h1>{this.state.lastButton}</h1>
       </div>
     );
