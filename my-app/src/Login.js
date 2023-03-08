@@ -11,12 +11,16 @@ export default class Login extends React.Component {
   handleChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
-    const type = event.target.type;
-    const checked = event.target.value;
 
-    this.setState(() => ({
-      [name]: type === "checkbox" ? checked : value,
-    }));
+    this.setState((prevState) => {
+      const newState = {
+        ...prevState,
+        [name]: value,
+      };
+      newState.disabled =
+        newState.username === "" && newState.password === "" ? true : false;
+      return newState;
+    });
   };
 
   render() {
@@ -39,6 +43,12 @@ export default class Login extends React.Component {
           checked={this.state.checked}
           onChange={this.handleChange}
         />
+        <button
+          onClick={() => this.props.onLogin(this.state)}
+          disabled={this.state.disabled}
+        >
+          Login
+        </button>
       </div>
     );
   }
