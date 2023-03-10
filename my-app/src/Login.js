@@ -51,6 +51,9 @@ export default class Login extends React.Component {
           onChange={this.handleChange}
         />
         <button
+          style={{
+            backgroundColor: this.state.password.length <= 8 ? "red" : "green",
+          }}
           onClick={() => this.props.onLogin(this.state)}
           disabled={this.state.disabled}
         >
