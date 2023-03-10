@@ -15,15 +15,7 @@ export default class TodoList extends Component {
       };
     });
   };
-  handleRemove = (index) => {
-    this.setState((state) => {
-      state.items.splice(index, 1);
-      console.log(state);
-      return {
-        items: state.items,
-      };
-    });
-  };
+
   handleReset = () => {
     this.setState({
       items: [],
@@ -34,16 +26,7 @@ export default class TodoList extends Component {
       <div>
         <ul>
           {this.state.items.map((item, index) => (
-            <li key={item + index}>
-              {item}
-              <button
-                onClick={() => {
-                  this.handleRemove(index);
-                }}
-              >
-                Remove
-              </button>
-            </li>
+            <li key={item + index}>{item}</li>
           ))}
         </ul>
         <input ref={this.inputRef} type="text" />
