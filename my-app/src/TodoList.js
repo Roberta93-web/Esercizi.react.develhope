@@ -9,7 +9,6 @@ export default class TodoList extends Component {
   hanldeAddItem = () => {
     this.setState((prevState) => {
       const value = this.inputRef.current.value;
-      this.inputRef.current.value = "";
       return {
         items: [...prevState.items, value],
       };
