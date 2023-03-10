@@ -12,7 +12,7 @@ export default class App extends Component {
       <div>
         <Hello />
         <Login />
-        {/* <Welcome name="John" age={30} /> */}
+        <Welcome name="John" age={30} />
       </div>
     );
   }
