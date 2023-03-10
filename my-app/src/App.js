@@ -1,10 +1,6 @@
 import React, { Component } from "react";
-import ClickCounter from "./ClickCounter";
-import Counter from "./Counter";
-import { CounterDisplay } from "./CounterDisplay";
 import Hello from "./Hello";
-import Login from "./Login";
-import Welcome from "./Welcome";
+import UncontrolledLogin from "./UncontrolledLogin";
 
 export default class App extends Component {
   onLogin = (state) => {
@@ -14,11 +10,7 @@ export default class App extends Component {
     return (
       <div>
         <Hello />
-        <Welcome name="John" age={30} />
-        <Counter initialValue={1} increment={1} timeout={1000} />
-        <CounterDisplay />
-        <ClickCounter />
-        <Login onLogin={this.onLogin} />
+        <UncontrolledLogin onLogin={this.onLogin} />
       </div>
     );
   }
