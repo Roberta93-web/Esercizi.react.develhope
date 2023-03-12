@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Container from "./Container";
 import Hello from "./Hello";
 import Login from "./Login";
 import Welcome from "./Welcome";
@@ -10,9 +11,11 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Hello />
-        <Login />
-        <Welcome name="John" age={30} />
+        <Container>
+          <Hello />
+          <Login />
+          {/* <Welcome name="John" age={30} /> */}
+        </Container>
       </div>
     );
   }
