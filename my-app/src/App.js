@@ -11,7 +11,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Container>
+        <Container title={"Title Prop"}>
           <Hello />
           <Login />
           {/* <Welcome name="John" age={30} /> */}
