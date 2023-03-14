@@ -6,7 +6,7 @@ export default class DisplayLanguage extends Component {
     return (
       <LanguageContext.Consumer>
         {(language) => {
-          return <div>The language is: {language}</div>;
+          return <h1>The language is: {language}</h1>;
         }}
       </LanguageContext.Consumer>
     );

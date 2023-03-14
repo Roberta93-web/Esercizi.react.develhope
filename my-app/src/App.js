@@ -22,7 +22,7 @@ export default class App extends Component {
   };
   render() {
     return (
-      <div>
+      <div class="border-2 border-rose-500">
         <select
           value={this.state.language}
           onChange={this.handleChangeLanguage}
