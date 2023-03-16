@@ -7,14 +7,13 @@ import Login from "./Login";
 import Welcome from "./Welcome";
 
 export default class App extends Component {
-  onLogin = (state) => {
-    console.log(state);
-  };
+  onLogin(data) {
+    console.log(data);
+  }
   render() {
     return (
       <div>
         <Hello />
-        <Welcome name="John" age={30} />
         <Counter initialValue={1} increment={1} timeout={1000} />
         <CounterDisplay />
         <ClickCounter />
