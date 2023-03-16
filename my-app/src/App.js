@@ -8,7 +8,6 @@ export default class App extends Component {
     return (
       <div>
         <Hello />
-        <Welcome name="John" age={30} />
         <Counter />
       </div>
     );
