@@ -1,39 +1,10 @@
 import React, { Component } from "react";
-import Container from "./Container";
-import DisplayLanguage from "./DisplayLanguage";
-import Hello from "./Hello";
-import { LanguageContext } from "./LanguageContext";
-import Login from "./Login";
 import Welcome from "./Welcome";
 
-export default class App extends Component {
-  onLogin = (state) => {
-    console.log(state);
-  };
-
-  state = {
-    language: "en",
-  };
-
-  handleChangeLanguage = (event) => {
-    this.setState({
-      language: event.target.value,
-    });
-  };
-  render() {
-    return (
-      <div class="border-2 border-rose-500">
-        <select
-          value={this.state.language}
-          onChange={this.handleChangeLanguage}
-        >
-          <option value="en">INGLESE</option>
-          <option value="it">ITALIANO</option>
-        </select>
-        <LanguageContext.Provider value={this.state.language}>
-          <DisplayLanguage />
-        </LanguageContext.Provider>
-      </div>
-    );
-  }
+export default function App() {
+  return (
+    <div className="border-solid border-2 border-sky-500">
+      <Welcome name="Roberta" />
+    </div>
+  );
 }
