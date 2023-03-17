@@ -11,8 +11,8 @@ export default class App extends Component {
       <div>
         <Hello />
         <Counter />
-        {/* <GithubUser username="Roberta93-web" /> */}
-        <GithubUserList unsername="user" />
+        <GithubUser username="Roberta93-web" />
+        <GithubUserList />
       </div>
     );
   }
