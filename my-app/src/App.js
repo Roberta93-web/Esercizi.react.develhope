@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Counter from "./Counter";
+import Form from "./Form";
 import GithubUser from "./GithubUser";
 import Hello from "./Hello";
-import Welcome from "./Welcome";
 
 export default class App extends Component {
   render() {
@@ -11,6 +11,7 @@ export default class App extends Component {
         <Hello />
         <Counter />
         <GithubUser username="Roberta93-web" />
+        <Form />
       </div>
     );
   }
