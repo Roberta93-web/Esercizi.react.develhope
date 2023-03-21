@@ -1,8 +1,8 @@
 import { useMemo } from "react";
 export function FilteredList({ list }) {
   const filterItems = useMemo(() => {
-    const ogjFilter = list.filter((obj) => obj.age >= 18);
-    return ogjFilter;
+    const newObj = list.filter((obj) => obj.age >= 18);
+    return newObj;
   }, [list]);
 
   return (
