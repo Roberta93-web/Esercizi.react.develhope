@@ -1,10 +1,12 @@
-import React, { Component } from "react";
+import { Route, Routes } from "react-router-dom";
 import Welcome from "./Welcome";
 
-export default function App() {
+export function App() {
   return (
     <div className="border-solid border-2 border-sky-500">
-      <Welcome name="Roberta" />
+      <Routes>
+        <Route path="/" element={<Welcome name="Roberta" />}></Route>
+      </Routes>
     </div>
   );
 }
