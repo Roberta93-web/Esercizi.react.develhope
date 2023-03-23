@@ -18,7 +18,7 @@ import { CounterDisplay } from "./CounterDisplay";
 //   }
 // }
 
-export function Counter({ initialValue = 0, interval = 1000 }) {
+export default function Counter({ initialValue = 0, interval = 1000 }) {
   const [count, setCount] = useState(initialValue);
 
   useEffect(() => {
