@@ -6,7 +6,7 @@ export function App() {
   return (
     <div className="border-solid border-2 border-sky-500">
       <div>
-        <Link to="/">Home</Link> | <Link to="/counter">Counter</Link>
+        <Link to="/welcome">Welcome</Link> | <Link to="/counter">Counter</Link>
       </div>
       <Routes>
         <Route path="/" element={<Welcome name="Roberta" />} />
