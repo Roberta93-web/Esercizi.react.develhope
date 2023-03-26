@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, Outlet } from "react-router-dom";
 import GithubUser from "./GithubUser";
 
 export default function GithubUserList() {
@@ -21,10 +22,11 @@ export default function GithubUserList() {
       <ul>
         {users.map((user, index) => (
           <li key={user + index}>
-            <GithubUser key={user} username={user} />
+            <Link to={`/users/${user}`}>{user}</Link>
           </li>
         ))}
       </ul>
+      <Outlet />
     </div>
   );
 }
