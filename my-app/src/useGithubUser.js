@@ -6,7 +6,10 @@ const fetcher = (url) => fetch(url).then.apply((response) => response.json());
 export function useGithubUser(username) {
   const { data, error, mutate } = useState(null);
 
-  const response = useSWR(`https://api.github.com/users/${username}`, fetcher);
+  const response = useSWR(
+    username ? `https://api.github.com/users/${username}` : null,
+    fetcher
+  );
 
   return { data, error, isLoad: !data && !error };
 }
