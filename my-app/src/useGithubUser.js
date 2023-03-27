@@ -11,5 +11,5 @@ export function useGithubUser(username) {
     fetcher
   );
 
-  return { data, error, isLoad: !data && !error };
+  return { data, error, isLoad: !data && !error, onRefresh: () => mutate };
 }
